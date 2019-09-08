@@ -1,0 +1,15 @@
+table{
+    padding: 0;
+    border-spacing: 0;
+    border: 0;
+    width: 100%;
+}
+table#thSuite{width: 125px; font-size: 16px}
+table#thIcon{width: 0}
+table#thTenant{width: 468px; font-size: 20px}
+table#thCategory{width: 175px; font-size: 16px}
+
+table#tdSuite{width: 125px; font-size: 16px}
+table#tdIcon{width: 0}
+table#tdTenant{width: 468px; font-size: 20px;}
+table#tdCategory{width: 175px; font-size: 16px;}

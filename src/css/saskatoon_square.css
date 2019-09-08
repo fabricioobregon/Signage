@@ -1,0 +1,15 @@
+
+div#o_header{background: url(/images/dream_banner_SaskatoonSquare.jpg) no-repeat; }
+div#o_footer{background-color: #17385b;}
+div#o_spacer{background-color: #12283e}
+div#o_hspacer,#o_hspacer2{background-color: #12283e}
+div#o_content_inner{background: url(/images/ss_body.png)}
+.o_weather_day{color: #FFFFFF;}
+.o_weather_text{color: #FFFFFF;}
+#txt_date{color: #FFFFFF;}
+#txt_time{color: #FFFFFF;}
+div#clock{background: transparent}
+.altRow {background: transparent url(/images/ss_neutral_trans_bg.png);}
+.o_field_heading{color: #030950;}
+.tenant_cell {border-top: 1px solid #69759b; color: #000000;}
+#messagescroller {color: #FFFFFF;}
