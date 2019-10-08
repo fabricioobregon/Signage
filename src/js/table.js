@@ -10,16 +10,15 @@ export default function Table() {
         {suite:"1070",tenant:"RBC Dominion Securities Inc.",category:"Finance"},{suite:"700",tenant:"Scotia Wealth Management",category:"Finance"},{suite:"800",tenant:"TD Wealth",category:"Finance"},
         {suite:"1360",tenant:"Wellington-Altus Private Wealth Inc.",category:"Finance"},{suite:"830",tenant:"WESTCAP MGT.LTD.",category:"Finance"}];
 
+    const delay = 5000;
     const pageSize = 7;
     const listSize = rootList.length;
     let [first, setFirst] = useState(0);
     let [last,setLast] = useState(pageSize);
-    let [list, setList] = useState([]);
-
+    let [list, setList] = useState(rootList.slice(first,last));
 
 
     useInterval(() => {
-
 
         while(true){
             if (last >= listSize) {
@@ -35,7 +34,7 @@ export default function Table() {
             return list;
         }
 
-    }, 1000);
+    }, delay);
 
 
 
