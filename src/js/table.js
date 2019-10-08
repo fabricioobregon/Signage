@@ -36,12 +36,9 @@ export default function Table() {
 
     }, delay);
 
-
-
     return (
         <div>
-
-            <table>
+            <table className="o_tenant_table" cellPadding="0" cellSpacing="0">
                 <tbody>
                 <tr>
                     <td id="thSuite" className="o_field_heading"><b>Suite</b></td>
@@ -60,7 +57,6 @@ export default function Table() {
                 ))}
                 </tbody>
             </table>
-
         </div>
     )
 }

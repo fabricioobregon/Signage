@@ -10,9 +10,9 @@ let nmins;
 let nsecn;
 let nday;
 let nmonth;
-let nmonth2;
+// let nmonth2;
 let ntoday;
-let ntoday2;
+// let ntoday2;
 let nyear;
 let AorP = " ";
 let clockId = 0;
@@ -21,21 +21,12 @@ let language = "ENGLISH"
 // let txt_time;
 let txt_date;
 let txt_time;
-let current_time;
+// let current_time;
 
 export default function SetTime() {
-    const [ntime, setnTime] = useState(txt_time);
-
-
-
-
-
-
-
     let lang;
-// function setTime(themili, lang) {
+    // function setTime(themili, lang) {
     mili = Date.now();
-
     //if no language is set, use the default (english)
     if (lang != null)
         language = "FRENCH";
@@ -47,7 +38,6 @@ export default function SetTime() {
         clockId = 0;
     }    */
     startTime();
-
 
     function startTime() {
 
@@ -95,14 +85,14 @@ export default function SetTime() {
         let lmonth_display = translate(language, "long_month", nmonth);
         let lmonth = translate("ENGLISH", "long_month", nmonth);
 
-        if (nmonth < 10)
-            nmonth2 = "0" + nmonth;
-        else
-            nmonth2 = nmonth;
-        if (ntoday < 10)
-            ntoday2 = "0" + ntoday;
-        else
-            ntoday2 = ntoday;
+        // if (nmonth < 10)
+        //     nmonth2 = "0" + nmonth;
+        // else
+        //     nmonth2 = nmonth;
+        // if (ntoday < 10)
+        //     ntoday2 = "0" + ntoday;
+        // else
+        //     ntoday2 = ntoday;
 
         if (nyear <= 99)
             nyear = "19" + nyear;
@@ -153,15 +143,12 @@ export default function SetTime() {
 //		if (lang == "ENGLISH") {
             if (val >= 13) val -= 12;
 //		}
-
             if (val === 0) val = 12;
-
             return val;
         } else if (type === "AorP") {
             if (lang === "FRENCH") {
 //			val = "";	//24 hours
             }
-
             return val;
         }
     }

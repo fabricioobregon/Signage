@@ -9,56 +9,30 @@ import table from "./js/table";
 
 function App() {
 
-
     return (
 
         <div id="everything">
-
-            <div id="refresh_response"/>
-
             <div id="o_container">
+
                 {/*HEADER*/}
                 <div id="o_header">
-
                     <div id="top_text">
                         {setTime()}
                     </div>
                 </div>
-
                 <div id="o_hspacer"/>
 
                 {/*CONTENT*/}
                 <div id="o_content">
                     <div id="o_content_inner">
-                        <div id="refresh_directory">
-                            {/*<script type="text/javascript">directoryFade.resetContent();</script>*/}
-                            <div id="marqueecontainer">
-                                <table className="o_tenant_table" cellPadding="0" cellSpacing="0">
-                                    <tbody>
-                                    <tr>
-                                        <td>
-
-                                            <div className="fadeElem" id="fadeElem0"/>
-                                            {table()}
-
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div id="marqueecontainer">
+                            {table()}
                         </div>
                     </div>
-
                     <div id="o_spacer"/>
-
-                    <div className="o_ads">
-                        <div id="refresh_ads">
-                        </div>
-                    </div>
                 </div>
 
                 <div id="o_hspacer2"/>
-
 
                 {/*FOOTER*/}
                 <div id="o_footer">
