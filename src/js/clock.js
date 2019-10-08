@@ -171,7 +171,7 @@ export default function SetTime() {
     return (
         <div>
             <div id="txt_date">{txt_date}</div>
-            <div id="txt_time">{Date.now()}</div>
+            <div id="txt_time">{txt_time}</div>
             <div id="refresh_timestamp">
                 <div id="current_time" value=""/>
             </div>
