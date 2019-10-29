@@ -4,14 +4,14 @@ import '../css/table.css';
 
 export default function Table() {
 
-    let rootList = [{suite:"940",tenant:"CBRE",category:"Real Estate"},{suite:"900",tenant:"EncoreFX",category:"Finance"},{suite:"1200",tenant:"Ernst & Young LLP Chartered Accountants",category:"Accounting"},
-        {suite:"830",tenant:"Golden Opportunities Fund Inc.",category:"Finance"},{suite:"600",tenant:"Junior Achievement",category:"Education"},{suite:"410",tenant:"Justice Canada",category:"Government"},
-        {suite:"950",tenant:"Marsh Canada Limited",category:"Insurance"},{suite:"950",tenant:"Mercer Canada Limited",category:"Consulting"},{suite:"1500",tenant:"MLT Aikins LLP",category:"Legal"},
-        {suite:"1070",tenant:"RBC Dominion Securities Inc.",category:"Finance"},{suite:"700",tenant:"Scotia Wealth Management",category:"Finance"},{suite:"800",tenant:"TD Wealth",category:"Finance"},
-        {suite:"1360",tenant:"Wellington-Altus Private Wealth Inc.",category:"Finance"},{suite:"830",tenant:"WESTCAP MGT.LTD.",category:"Finance"}];
+    let rootList = [{ID:"1",suite:"940",tenant:"CBRE",category:"Real Estate"},{ID:"2",suite:"900",tenant:"EncoreFX",category:"Finance"},{ID:"3",suite:"1200",tenant:"Ernst & Young LLP Chartered Accountants",category:"Accounting"},
+        {ID:"4",suite:"830",tenant:"Golden Opportunities Fund Inc.",category:"Finance"},{ID:"5",suite:"600",tenant:"Junior Achievement",category:"Education"},{ID:"6",suite:"410",tenant:"Justice Canada",category:"Government"},
+        {ID:"7",suite:"950",tenant:"Marsh Canada Limited",category:"Insurance"},{ID:"8",suite:"950",tenant:"Mercer Canada Limited",category:"Consulting"},{ID:"9",suite:"1500",tenant:"MLT Aikins LLP",category:"Legal"},
+        {ID:"10",suite:"1070",tenant:"RBC Dominion Securities Inc.",category:"Finance"},{ID:"11",suite:"700",tenant:"Scotia Wealth Management",category:"Finance"},{ID:"12",suite:"800",tenant:"TD Wealth",category:"Finance"},
+        {ID:"13",suite:"1360",tenant:"Wellington-Altus Private Wealth Inc.",category:"Finance"},{ID:"14",suite:"830",tenant:"WESTCAP MGT.LTD.",category:"Finance"}];
 
     const delay = 5000;
-    const pageSize = 7;
+    const pageSize = 8;
     const listSize = rootList.length;
     let [first, setFirst] = useState(0);
     let [last,setLast] = useState(pageSize);
@@ -48,9 +48,9 @@ export default function Table() {
                 </tr>
 
                 {list.map(tenants => (
-                    <tr key={tenants.suite} className="altRow">
+                    <tr key={tenants.ID} className="altRow">
                         <td id="tdSuite" className="tenant_cell">{tenants.suite}</td>
-                        <td id="tdIcon" className="tenant_cell"><img src="" alt=""/></td>
+                        <td id="tdIcon" className="tenant_cell table_icon"><img src={"/images/"+tenants.ID+".png"} alt=""/></td>
                         <td id="tdTenant" className="tenant_cell">{tenants.tenant}</td>
                         <td id="tdCategory" className="tenant_cell">{tenants.category}</td>
                     </tr>

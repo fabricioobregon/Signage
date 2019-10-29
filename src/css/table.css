@@ -4,12 +4,15 @@ table{
     border: 0;
     width: 100%;
 }
-table#thSuite{width: 125px; font-size: 16px}
-table#thIcon{width: 0}
-table#thTenant{width: 468px; font-size: 20px}
-table#thCategory{width: 175px; font-size: 16px}
+table#thSuite{width: 125px; font-size: 16px;}
+table#thIcon{width: 0;}
+table#thTenant{width: 468px; font-size: 20px;}
+table#thCategory{width: 175px; font-size: 16px;}
 
-table#tdSuite{width: 125px; font-size: 16px}
-table#tdIcon{width: 0}
+table#tdSuite{width: 125px; font-size: 16px;}
+.table_icon{width: 50px;}
+.table_icon img{width: 100%; height: auto;}
+.altRow:nth-of-type(2n){background: transparent url(/images/ss_neutral_trans_bg.png);}
+.altRow:nth-of-type(2n+1){background: transparent ;}
 table#tdTenant{width: 468px; font-size: 20px;}
 table#tdCategory{width: 175px; font-size: 16px;}

@@ -9,7 +9,5 @@ div#o_content_inner{background: url(/images/ss_body.png)}
 #txt_date{color: #FFFFFF;}
 #txt_time{color: #FFFFFF;}
 div#clock{background: transparent}
-.altRow {background: transparent url(/images/ss_neutral_trans_bg.png);}
 .o_field_heading{color: #030950;}
 .tenant_cell {border-top: 1px solid #69759b; color: #000000;}
-#messagescroller {color: #FFFFFF;}

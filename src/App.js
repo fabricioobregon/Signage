@@ -6,7 +6,6 @@ import './css/saskatoon_square.css';
 import setTime from "./js/clock";
 import table from "./js/table";
 
-
 function App() {
 
     return (
@@ -31,12 +30,10 @@ function App() {
                     </div>
                     <div id="o_spacer"/>
                 </div>
-
                 <div id="o_hspacer2"/>
 
                 {/*FOOTER*/}
                 <div id="o_footer">
-                    <script></script>
                     <div className="o_footer_left">
                         <div className="o_messages">
                             <div id="refresh_notice_lines">
@@ -52,6 +49,7 @@ function App() {
                                 <tr>
                                     <td width="100%" align="right">
                                         <div className="weatherfadeElem" id="weatherfadeElem"/>
+
                                     </td>
                                 </tr>
                                 </tbody>
